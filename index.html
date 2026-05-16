@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Train Tracker</title>
+    <!-- Supabase Library -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <style>
+        body { font-family: sans-serif; padding: 20px; text-align: center; }
+        .privacy-box { background: #f9f9f9; padding: 15px; border-left: 4px solid #ff9800; margin-bottom: 20px; text-align: left; font-size: 14px;}
+        button { padding: 15px 30px; font-size: 18px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        #status { margin-top: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <h2>Contribute Live Train Status</h2>
+    
+    <div class="privacy-box">
+        <strong>Privacy Notice:</strong> By clicking the button below, you agree to share your location. Your location is strictly anonymized, used ONLY to verify train movement, and is never tied to your personal identity.
+    </div>
+
+    <!-- Replace '12345' with an actual train ID later or make it dynamic -->
+    <button id="track-btn" data-train="12345">Start Sharing Location</button>
+    <p id="status">Waiting to start...</p>
+
+    <!-- Link to your logic file -->
+    <script src="app.js"></script>
+</body>
+</html>
