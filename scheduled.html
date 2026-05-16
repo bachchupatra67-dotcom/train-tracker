@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Timetable</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        input, button { padding: 10px; font-size: 16px; margin: 5px; }
+        .station { background: #f0f0f0; margin: 10px 0; padding: 10px; border-left: 5px solid #007bff; }
+        .time { font-weight: bold; color: #d32f2f; }
+    </style>
+</head>
+<body>
+
+    <h2>Check Train Timetable</h2>
+    <input type="text" id="train-no" placeholder="Enter Train Number (e.g. 12004)">
+    <button onclick="getTimetable()">Search Route</button>
+
+    <div id="loading" style="display:none;">Fetching from server...</div>
+    <div id="route-container"></div>
+
+    <script src="schedule.js"></script>
+</body>
+</html>
